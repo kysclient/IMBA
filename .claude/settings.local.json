@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:m.ktwa2016.co.kr)"
+      "WebFetch(domain:m.ktwa2016.co.kr)",
+      "Bash(ls:*)",
+      "Bash(npm install:*)",
+      "Bash(tail:*)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:www.google.com)"
     ]
   }
 }

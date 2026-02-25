@@ -21,19 +21,23 @@ export default function MainLayout({
     "/apply",
   ];
 
-  useEffect(() => {
-    // If the path starts with any of the hidden paths, redirect to home
-    if (hiddenPaths.some((p) => pathname.startsWith(p))) {
-      router.replace("/");
-    }
-  }, [pathname, router]);
+  // useEffect(() => {
+  //   if (hiddenPaths.some((p) => pathname.startsWith(p))) {
+  //     router.replace("/");
+  //   }
+  // }, [pathname, router]);
 
   const isAuthPage =
-    pathname === "/login" || pathname === "/signup" || pathname === "/apply";
+    pathname === "/login" || pathname === "/signup" || pathname === "/apply" || pathname === "/reset-password";
 
-  // Prevent flashing of hidden pages before redirect
-  const shouldHide = hiddenPaths.some((p) => pathname.startsWith(p));
-  if (shouldHide) return null;
+  const isAdminPage = pathname.startsWith("/admin");
+
+  // const shouldHide = hiddenPaths.some((p) => pathname.startsWith(p));
+  // if (shouldHide) return null;
+
+  if (isAdminPage) {
+    return <>{children}</>;
+  }
 
   return (
     <main

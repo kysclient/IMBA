@@ -13,15 +13,51 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero background blob animations */
+@keyframes blob-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, -50px) scale(1.1); }
+  50% { transform: translate(-20px, 20px) scale(0.9); }
+  75% { transform: translate(40px, 30px) scale(1.05); }
+}
+@keyframes blob-drift-reverse {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(-40px, 30px) scale(0.95); }
+  50% { transform: translate(30px, -30px) scale(1.1); }
+  75% { transform: translate(-20px, -40px) scale(1); }
+}
+@keyframes blob-drift-slow {
+  0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(50px, -30px) scale(1.15) rotate(120deg); }
+  66% { transform: translate(-30px, 40px) scale(0.9) rotate(240deg); }
+}
+@keyframes float-particle {
+  0%, 100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.4; }
+  50% { transform: translateY(-20px) translateX(10px) scale(1.2); opacity: 0.8; }
+}
+@keyframes grid-pulse {
+  0%, 100% { opacity: 0.03; }
+  50% { opacity: 0.07; }
+}
+
+.animate-blob-drift {
+  animation: blob-drift 20s ease-in-out infinite;
+}
+.animate-blob-drift-reverse {
+  animation: blob-drift-reverse 25s ease-in-out infinite;
+}
+.animate-blob-drift-slow {
+  animation: blob-drift-slow 30s ease-in-out infinite;
+}
+.animate-float-particle {
+  animation: float-particle 4s ease-in-out infinite;
+}
+.animate-grid-pulse {
+  animation: grid-pulse 8s ease-in-out infinite;
 }

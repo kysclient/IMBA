@@ -20,7 +20,9 @@ export default function Footer() {
   if (
     pathname === "/login" ||
     pathname === "/signup" ||
-    pathname === "/apply"
+    pathname === "/apply" ||
+    pathname === "/reset-password" ||
+    pathname.startsWith("/admin")
   ) {
     return null;
   }
@@ -107,14 +109,6 @@ export default function Footer() {
                   커뮤니티
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/store"
-                  className="hover:text-white hover:translate-x-1 inline-block transition-all"
-                >
-                  스토어
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -126,7 +120,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li>
                 <Link
-                  href="/faq"
+                  href="/community?category=Q%26A"
                   className="hover:text-white hover:translate-x-1 inline-block transition-all"
                 >
                   자주 묻는 질문
@@ -134,15 +128,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contact"
-                  className="hover:text-white hover:translate-x-1 inline-block transition-all"
-                >
-                  1:1 문의
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/notice"
+                  href="/community?category=공지사항"
                   className="hover:text-white hover:translate-x-1 inline-block transition-all"
                 >
                   공지사항
@@ -196,10 +182,10 @@ export default function Footer() {
                 <Mail className="w-5 h-5 text-slate-500 shrink-0" />
                 <span>
                   <a
-                    href="mailto:info@imba.or.kr"
+                    href="mailto:jyun_beauty@naver.com"
                     className="hover:text-white transition-colors"
                   >
-                    info@imba.or.kr
+                    jyun_beauty@naver.com
                   </a>
                 </span>
               </li>
@@ -215,7 +201,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-6">
             <span>사업자등록번호: 123-45-67890</span>
-            <span>대표: 홍길동</span>
+            <span>대표: 이자윤</span>
           </div>
         </div>
       </div>
