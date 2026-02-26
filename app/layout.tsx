@@ -6,13 +6,13 @@ import MainLayout from "./components/MainLayout";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://imba.kr"),
+  metadataBase: new URL("https://www.imba.kr"),
   title: {
     template: "%s | IMBA 국제메디컬뷰티협회",
     default: "IMBA 국제메디컬뷰티협회 | 메디컬 뷰티 교육의 글로벌 스탠다드",
   },
   description:
-    "IMBA 국제메디컬뷰티협회 - 메디컬뷰티, 피부관리, 왁싱, 네일아트, 스킨케어 전문 교육과 글로벌 자격 인증. 체계적인 커리큘럼과 취업·창업 지원.",
+    "IMBA 국제메디컬뷰티협회 - 메디컬뷰티·피부관리·왁싱·네일아트 전문 교육과 글로벌 자격 인증 기관",
   keywords: [
     "메디컬뷰티",
     "피부관리",
@@ -77,8 +77,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "IMBA 국제메디컬뷰티협회",
-              url: "https://imba.kr",
-              logo: "https://imba.kr/main_logo_v2.png",
+              url: "https://www.imba.kr",
+              logo: "https://www.imba.kr/main_logo_v2.png",
               contactPoint: {
                 "@type": "ContactPoint",
                 telephone: "+82-2-1234-5678",

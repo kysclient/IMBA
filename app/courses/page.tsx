@@ -46,8 +46,8 @@ export default async function CoursesPage() {
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "홈", url: "https://imba.kr" },
-          { name: "교육 과정", url: "https://imba.kr/courses" },
+          { name: "홈", url: "https://www.imba.kr" },
+          { name: "교육 과정", url: "https://www.imba.kr/courses" },
         ]}
       />
       {courses.map((course) => (

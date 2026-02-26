@@ -30,7 +30,7 @@ export function CourseJsonLd({
         provider: {
           "@type": "Organization",
           name: provider || "IMBA 국제메디컬뷰티협회",
-          url: "https://imba.kr",
+          url: "https://www.imba.kr",
         },
       }}
     />

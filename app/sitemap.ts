@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getDb } from "@/lib/db";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://imba.kr";
+  const baseUrl = "https://www.imba.kr";
 
   const staticPages: MetadataRoute.Sitemap = [
     {

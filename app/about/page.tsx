@@ -18,8 +18,8 @@ export default function AboutPage() {
     <>
       <BreadcrumbJsonLd
         items={[
-          { name: "홈", url: "https://imba.kr" },
-          { name: "협회 소개", url: "https://imba.kr/about" },
+          { name: "홈", url: "https://www.imba.kr" },
+          { name: "협회 소개", url: "https://www.imba.kr/about" },
         ]}
       />
       <AboutClient />

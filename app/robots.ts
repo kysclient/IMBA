@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
         "/reset-password",
       ],
     },
-    sitemap: "https://imba.kr/sitemap.xml",
+    sitemap: "https://www.imba.kr/sitemap.xml",
   };
 }
