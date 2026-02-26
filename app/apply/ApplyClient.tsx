@@ -101,7 +101,7 @@ function ApplyForm() {
   if (submitted) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-[#f0f4f9] p-4 sm:p-6 font-sans">
-        <div className="w-full max-w-[540px] bg-white rounded-[28px] shadow-sm p-10 sm:p-14 text-center">
+        <div className="w-full max-w-[540px] bg-white rounded-[28px] shadow-sm p-6 sm:p-10 md:p-14 text-center">
           <div className="flex justify-center mb-8">
             <Link href="/">
               <Image
@@ -155,7 +155,7 @@ function ApplyForm() {
         style={{ minHeight: "600px" }}
       >
         {/* Left Side (Text / Branding) */}
-        <div className="w-full md:w-[45%] p-10 sm:p-12 lg:px-14 lg:py-20 flex flex-col bg-[#f0f4f9] md:bg-transparent">
+        <div className="w-full md:w-[45%] p-6 sm:p-10 md:p-12 lg:px-14 lg:py-20 flex flex-col bg-[#f0f4f9] md:bg-transparent">
           <Link href="/" className="inline-flex items-center group mb-12 w-max">
             <Image
               src="/main_logo_v2.png"
@@ -227,7 +227,7 @@ function ApplyForm() {
         </div>
 
         {/* Right Side (Form) */}
-        <div className="w-full md:w-[55%] p-10 sm:p-12 lg:px-14 lg:py-20 flex flex-col justify-center relative bg-white">
+        <div className="w-full md:w-[55%] p-6 sm:p-10 md:p-12 lg:px-14 lg:py-20 flex flex-col justify-center relative bg-white">
           <form
             className="space-y-6 w-full max-w-[450px]"
             onSubmit={handleNext}
@@ -485,13 +485,13 @@ function ApplySkeleton() {
         className="w-full max-w-[1040px] bg-white rounded-[28px] md:flex overflow-hidden shadow-sm mx-auto animate-pulse"
         style={{ minHeight: "600px" }}
       >
-        <div className="w-full md:w-[45%] p-10 sm:p-12 lg:px-14 lg:py-20 flex flex-col">
+        <div className="w-full md:w-[45%] p-6 sm:p-10 md:p-12 lg:px-14 lg:py-20 flex flex-col">
           <div className="h-10 w-32 bg-gray-100 rounded mb-12" />
           <div className="h-10 bg-gray-100 rounded-xl w-3/4 mb-4" />
           <div className="h-5 bg-gray-100 rounded-lg w-full max-w-sm mb-2" />
           <div className="h-5 bg-gray-100 rounded-lg w-2/3 max-w-sm" />
         </div>
-        <div className="w-full md:w-[55%] p-10 sm:p-12 lg:px-14 lg:py-20 flex flex-col justify-center bg-white">
+        <div className="w-full md:w-[55%] p-6 sm:p-10 md:p-12 lg:px-14 lg:py-20 flex flex-col justify-center bg-white">
           <div className="space-y-6 w-full max-w-[450px]">
             <div className="h-7 bg-gray-100 rounded-lg w-2/3 mb-6" />
             {[...Array(4)].map((_, i) => (

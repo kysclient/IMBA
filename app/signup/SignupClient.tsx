@@ -77,7 +77,7 @@ export default function SignupPage() {
         style={{ minHeight: "520px" }}
       >
         {/* Left Side (Text / Branding) */}
-        <div className="w-full md:w-[45%] p-10 sm:p-12 lg:px-14 lg:py-20 flex flex-col">
+        <div className="w-full md:w-[45%] p-6 sm:p-10 md:p-12 lg:px-14 lg:py-20 flex flex-col">
           <Link href="/" className="inline-flex items-center group mb-8 w-max">
             <Image
               src="/main_logo_v2.png"
@@ -97,7 +97,7 @@ export default function SignupPage() {
         </div>
 
         {/* Right Side (Form) */}
-        <div className="w-full md:w-[55%] p-10 sm:p-12 lg:px-14 lg:py-20 flex flex-col justify-center">
+        <div className="w-full md:w-[55%] p-6 sm:p-10 md:p-12 lg:px-14 lg:py-20 flex flex-col justify-center">
           <form
             className="space-y-6 w-full max-w-[450px]"
             onSubmit={handleSubmit}
@@ -253,20 +253,8 @@ export default function SignupPage() {
       </div>
 
       {/* Footer / Meta links */}
-      <div className="w-full max-w-[1040px] px-2 sm:px-6 pt-6 pb-2 mx-auto flex flex-col sm:flex-row justify-between items-center text-xs text-[#444746]">
-        <div className="mb-4 sm:mb-0">
-          <select className="bg-transparent border-none text-xs text-[#444746] font-medium focus:ring-0 cursor-pointer hover:bg-gray-200 px-3 py-2 rounded transition-colors outline-none cursor-pointer">
-            <option>한국어</option>
-            <option>English (United States)</option>
-          </select>
-        </div>
+      <div className="w-full max-w-[1040px] px-2 sm:px-6 pt-6 pb-2 mx-auto flex justify-end items-center text-xs text-[#444746]">
         <div className="flex gap-1">
-          <Link
-            href="/help"
-            className="hover:bg-gray-200 px-3 py-2 rounded transition-colors font-medium"
-          >
-            도움말
-          </Link>
           <Link
             href="/privacy"
             className="hover:bg-gray-200 px-3 py-2 rounded transition-colors font-medium"

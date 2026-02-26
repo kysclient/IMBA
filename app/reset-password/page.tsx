@@ -217,7 +217,7 @@ export default function ResetPasswordPage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#f0f4f9] p-4 sm:p-6 font-sans">
       <div
-        className="w-full max-w-[540px] bg-white rounded-[28px] overflow-hidden relative z-10 mx-auto shadow-sm p-10 sm:p-14"
+        className="w-full max-w-[540px] bg-white rounded-[28px] overflow-hidden relative z-10 mx-auto shadow-sm p-6 sm:p-10 md:p-14"
       >
         <div className="flex justify-center mb-8">
           <Link href="/">
@@ -241,15 +241,8 @@ export default function ResetPasswordPage() {
       </div>
 
       {/* Footer */}
-      <div className="w-full max-w-[540px] px-2 sm:px-6 pt-6 pb-2 mx-auto flex flex-col sm:flex-row justify-between items-center text-xs text-[#444746]">
-        <div className="mb-4 sm:mb-0">
-          <select className="bg-transparent border-none text-xs text-[#444746] font-medium focus:ring-0 cursor-pointer hover:bg-gray-200 px-3 py-2 rounded transition-colors outline-none">
-            <option>한국어</option>
-            <option>English (United States)</option>
-          </select>
-        </div>
+      <div className="w-full max-w-[540px] px-2 sm:px-6 pt-6 pb-2 mx-auto flex justify-end items-center text-xs text-[#444746]">
         <div className="flex gap-1">
-          <Link href="/help" className="hover:bg-gray-200 px-3 py-2 rounded transition-colors font-medium">도움말</Link>
           <Link href="/privacy" className="hover:bg-gray-200 px-3 py-2 rounded transition-colors font-medium">개인정보처리방침</Link>
           <Link href="/terms" className="hover:bg-gray-200 px-3 py-2 rounded transition-colors font-medium">약관</Link>
         </div>
